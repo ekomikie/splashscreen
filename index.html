@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splash Screen</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css" />
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 1s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <header>
+        <h3>SPLASHSCREEN</h3>
+      </header>
+      <section>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro similique
+        consectetur non, eius illum, dolor vitae hic officia nisi asperiores
+        quas qui nostrum accusamus, earum tenetur voluptates iusto veniam amet
+        quos eos? Doloremque quibusdam ratione eveniet eligendi illo. Aperiam
+        corrupti quod eveniet at ratione praesentium voluptatum delectus,
+        nostrum dolores hic!
+      </section>
+    </main>
+
+    <script>
+      document.body.style.visibility = "hidden";
+      document.body.style.opacity = 0;
+    </script>
+    <div id="splashScreen" display="none">
+      <svg
+        id="logo"
+        width="155"
+        height="27"
+        viewBox="0 0 155 27"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M22.5541 26H17.5141L6.10213 8.756V26H1.06213V0.835999H6.10213L17.5141 18.116V0.835999H22.5541V26Z"
+          stroke="#F3F3F3"
+        />
+        <path
+          d="M32.5748 4.94V11.24H41.0348V15.236H32.5748V21.896H42.1148V26H27.5348V0.835999H42.1148V4.94H32.5748Z"
+          stroke="#F3F3F3"
+        />
+        <path
+          d="M63.7949 0.872001V4.94H57.0989V26H52.0589V4.94H45.3629V0.872001H63.7949Z"
+          stroke="#F3F3F3"
+        />
+        <path
+          d="M82.8803 21.212H72.8723L71.2163 26H65.9243L74.9603 0.835999H80.8283L89.8643 26H84.5363L82.8803 21.212ZM81.5123 17.18L77.8763 6.668L74.2403 17.18H81.5123Z"
+          stroke="#F3F3F3"
+        />
+        <path
+          d="M92.0178 13.4C92.0178 10.928 92.5698 8.72 93.6738 6.776C94.8018 4.808 96.3258 3.284 98.2458 2.204C100.19 1.1 102.362 0.548 104.762 0.548C107.57 0.548 110.03 1.268 112.142 2.708C114.254 4.148 115.73 6.14 116.57 8.684H110.774C110.198 7.484 109.382 6.584 108.326 5.984C107.294 5.384 106.094 5.084 104.726 5.084C103.262 5.084 101.954 5.432 100.802 6.128C99.6738 6.8 98.7858 7.76 98.1378 9.008C97.5138 10.256 97.2018 11.72 97.2018 13.4C97.2018 15.056 97.5138 16.52 98.1378 17.792C98.7858 19.04 99.6738 20.012 100.802 20.708C101.954 21.38 103.262 21.716 104.726 21.716C106.094 21.716 107.294 21.416 108.326 20.816C109.382 20.192 110.198 19.28 110.774 18.08H116.57C115.73 20.648 114.254 22.652 112.142 24.092C110.054 25.508 107.594 26.216 104.762 26.216C102.362 26.216 100.19 25.676 98.2458 24.596C96.3258 23.492 94.8018 21.968 93.6738 20.024C92.5698 18.08 92.0178 15.872 92.0178 13.4Z"
+          stroke="#F3F3F3"
+        />
+        <path
+          d="M119.651 13.4C119.651 10.928 120.203 8.72 121.307 6.776C122.435 4.808 123.959 3.284 125.879 2.204C127.823 1.1 129.995 0.548 132.395 0.548C135.203 0.548 137.663 1.268 139.775 2.708C141.887 4.148 143.363 6.14 144.203 8.684H138.407C137.831 7.484 137.015 6.584 135.959 5.984C134.927 5.384 133.727 5.084 132.359 5.084C130.895 5.084 129.587 5.432 128.435 6.128C127.307 6.8 126.419 7.76 125.771 9.008C125.147 10.256 124.835 11.72 124.835 13.4C124.835 15.056 125.147 16.52 125.771 17.792C126.419 19.04 127.307 20.012 128.435 20.708C129.587 21.38 130.895 21.716 132.359 21.716C133.727 21.716 134.927 21.416 135.959 20.816C137.015 20.192 137.831 19.28 138.407 18.08H144.203C143.363 20.648 141.887 22.652 139.775 24.092C137.687 25.508 135.227 26.216 132.395 26.216C129.995 26.216 127.823 25.676 125.879 24.596C123.959 23.492 122.435 21.968 121.307 20.024C120.203 18.08 119.651 15.872 119.651 13.4Z"
+          stroke="#F3F3F3"
+        />
+        <path
+          d="M153.547 0.872001V26H148.507V0.872001H153.547Z"
+          stroke="#F3F3F3"
+        />
+      </svg>
+    </div>
+    <script src="assets/main.js"></script>
+  </body>
+</html>

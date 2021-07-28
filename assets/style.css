@@ -1,0 +1,112 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1rem;
+}
+
+h3 {
+  text-align: center;
+}
+#splashScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #062660;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+#splashScreen.loaded {
+  animation: shift-out 1s ease 4s forwards; }
+
+@keyframes shift-out {
+  to {
+    top: -100vh; } }
+
+.visible {
+  opacity: 1;
+  transform: translate(0);
+  transition-property: opacity, transform;
+  transition-duration: 1s;
+  transition-timing-function: ease; }
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fill-white 1s ease forwards 3s; 
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 146.4;
+  stroke-dashoffset: 146.4;
+  animation: line-anim 2s ease forwards, fill-white 2s ease 2s forwards;
+ }
+
+#logo path:nth-child(2) {
+  stroke-dasharray: 115.5;
+  stroke-dashoffset: 115.5;
+  animation: line-anim 2s ease forwards 0.3s, fill-white 2s ease 2s forwards;
+ }
+
+#logo path:nth-child(3) {
+  stroke-dasharray: 87.2;
+  stroke-dashoffset: 87.2;
+  animation: line-anim 2s ease forwards 0.6s, fill-white 2s ease 2s forwards;
+ }
+
+#logo path:nth-child(4) {
+  stroke-dasharray: 120.0;
+  stroke-dashoffset: 120.0;
+  animation: line-anim 2s ease forwards 0.9s, fill-white 2s ease 2s forwards; 
+}
+
+#logo path:nth-child(5) {
+  stroke-dasharray: 123.1;
+  stroke-dashoffset: 123.1;
+  animation: line-anim 2s ease forwards 1.2s, fill-white 2s ease 2s forwards; 
+}
+
+  #logo path:nth-child(6) {
+    stroke-dasharray: 123.1;
+    stroke-dashoffset: 123.1;
+    animation: line-anim 2s ease forwards 1.5s, fill-white 2s ease 2s forwards;
+   }
+
+    #logo path:nth-child(7) {
+      stroke-dasharray: 60.4;
+      stroke-dashoffset: 60.4;
+      animation: line-anim 2s ease forwards 1.8s, fill-white 2s ease 2s forwards;
+     }
+
+
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+   } 
+  }
+
+@keyframes fill-white {
+  from {
+    fill: transparent; 
+  }
+  to {
+    fill: #F3F3F3;
+   } 
+  }
+
